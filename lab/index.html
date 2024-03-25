@@ -1,94 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Website Store</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Slide Navbar</title>
+    <link rel="stylesheet" type="text/css" href="css/registerxlogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <p>genKom</p>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#catalog">Catalog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <button class="action-btn nav-button">
-                <p>Pesan</p>
-            </button>
-        </nav>
-    </header>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">Pelajari yang Baru, <br> Temukan Kemungkinan Tanpa Batas</h1>
-                        <p>Temukan teknologi terbaru dan buka peluang tanpa batas. Bergabunglah dengan kami untuk meraih
-                            masa depan yang cerah!</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="img/img-hero.jpg" alt="Gambar Hero">
-                    </div>
+        <div class="signup">
+            <form id="signupForm">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" id="signupUsername" name="txt" placeholder="Username" required="">
+                <input type="email" id="signupEmail" name="email" placeholder="Email" required="">
+                <div class="password-container">
+                    <input type="password" id="signupPassword" name="pswd" placeholder="Password" required="">
+                    <img src="img/eye close.svg" alt="Hide Password" class="toggle-password" width="20px" height="20x">
                 </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="img/toko.jpg" alt="Foto Toko">
-                        <p class="alamat">Jl. Contoh No. 123, Kota Anda</p>
-                    </div>
-                    <div class="about-description">
-                        <p>Selamat datang di Agen Computer, tempat terbaik untuk menemukan teknologi terbaru dan produk
-                            elektronik berkualitas. Kami berkomitmen untuk menyediakan produk-produk terbaik dengan
-                            harga terjangkau kepada pelanggan kami.</p>
-                        <p>Dengan pengalaman bertahun-tahun dalam industri, kami siap membantu Anda menemukan solusi
-                            teknologi yang tepat untuk kebutuhan Anda. Kunjungi toko kami dan temukan kemungkinan tanpa
-                            batas!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="catalog" class="catalog">
-            <div class="container">
-                <h2>Our Catalog</h2>
-                <!-- Isi katalog produk Anda -->
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <!-- Formulir kontak atau informasi kontak lainnya -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <ul class="social-links">
-                <li><a href="#"><img src="images/github.png" alt="GitHub"></a></li>
-                <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
-            </ul>
-            <p>&copy; 2024 Website Store. All rights reserved.</p>
+                <button type="submit">Sign up</button>
+            </form>
         </div>
-    </footer>
 
-    <script src="js/script.js"></script>
+        <div class="login">
+            <form id="loginForm">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" id="loginEmail" name="email" placeholder="Email" required="">
+                <div class="password-container">
+                    <input type="password" id="loginPassword" name="pswd" placeholder="Password" required="">
+                    <img src="img/eye close.svg" alt="Hide Password" class="toggle-password" width="20px" height="20x">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/registerxlogin.js"></script>
 </body>
 
 </html>
